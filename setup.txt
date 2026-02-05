@@ -1,0 +1,34 @@
+Fix option B (best long-term): Switch to SSH (no tokens, no Windows caching)
+1) Change remote
+git remote set-url origin git@github.com:mortyhawky/pwsh.git
+
+2) Check
+git remote -v
+
+
+Should show:
+
+git@github.com:mortyhawky/pwsh.git
+
+3) Push
+git push
+
+If SSH isn’t set up yet
+
+Run:
+
+ssh-keygen -t ed25519 -C "mortyhawky"
+
+
+Then:
+
+cat ~/.ssh/id_ed25519.pub
+
+
+Copy that into GitHub:
+
+Settings → SSH keys → New key
+
+If you want, Morty, I can tell you in 2 seconds whether you already have an SSH key by running:
+
+ls ~/.ssh
