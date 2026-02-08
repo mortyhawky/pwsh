@@ -6,3 +6,4 @@ Write-Host "This is a simple script to demonstrate basic PowerShell commands."
 $greeting= "Hello, PowerShell!"
 # Output the variable
 Write-Host $greeting
+
